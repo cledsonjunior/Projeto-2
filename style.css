@@ -64,11 +64,11 @@ a:nth-child(2){
 }
 
 a:hover{
-   opacity: 0.4;
+   opacity: 0.4;    /*definir o estilo de um determinado link quando o usuário passa o mouse sobre ele*/
 }
 
 a:active{
-    opacity: 0.8;
+    opacity: 0.8;   /*usado para aplicar estilos a um link (<a>) enquanto ele está sendo clicado, ou seja, quando o usuário pressiona o botão do mouse sobre o link, mas ainda não o soltou.*/
 }
 
 button{
