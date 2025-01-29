@@ -1,0 +1,146 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+    padding-left: 136px;
+    margin-top: 15%;
+}
+
+.container-right {
+    display: inline-block;
+    background: rgba(93,93,125,0.16);
+    height: 100vh;
+    width: 40%;
+    position:absolute;
+}
+
+img{
+    /*width: 340px;*/
+    /*height: 450px;*/
+    position: relative;
+    top: 25%;
+    right: 120px;
+}
+
+h1{
+    color: #5D5D7D;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+    width: 368px;
+}
+
+p{
+    color: rgba(93,93,125,0.60);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px;
+    margin: 15px 0;
+    width: 540px;
+}
+
+a{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 41.5px;
+    color: #5D5D7D;
+    margin-right: 41px;
+    cursor:pointer;
+}
+
+a:nth-child(2){
+    opacity: 0.4;       /* estamos usando uma pseudoclasse para estilizar um elemento específico. No segundo link, somene o segundo filho daquele pai vai ser alterado a opacity.       */
+}
+
+a:hover{
+   opacity: 0.4;
+}
+
+a:active{
+    opacity: 0.8;
+}
+
+button{
+    width: 269px;
+    height: 62px;
+    border-radius: 50px;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px 0px rgba(148, 153, 234, 0.1);
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35.57px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;   /*Toda vez que PASSAR O MOUSE sobre o botão, ele fica um pouquinho mais transparente.*/
+}
+
+button:active{
+    opacity: 0.5;   /*Toda vez que PRESSIONAR O MOUSE sobre o botão, ele fica um pouquinho mais transparente.*/
+}
+
+header{
+    margin: 24px 0 0 57px;
+}
+
+@media screen and (max-width: 900px){
+    .container-left{
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-right{
+        display: block;      /*Não quero mais que fique um ao lado do outro, cada um terá que ficar no seu devido lugar*/
+        height: 50%;       /*Vai se adaptar de acordo com o tamanho que ele tem disponível*/
+        width: 100%;
+        position: static;
+        padding: 40px;
+    }
+
+    img{
+        position: static;
+        max-width: 90%;
+    }
+
+    header{
+        display: none;
+    }
+
+    h1{
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align:center;
+    }
+
+    p{
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    button{
+        margin: 0 auto;     /*quando usa o esquema de margin esquerda e direita, automática, o dispolay tem que estar setado na propriedade Block*/  
+        display: block;
+    }
+}
